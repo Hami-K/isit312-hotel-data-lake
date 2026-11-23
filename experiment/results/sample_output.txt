@@ -1,0 +1,5 @@
+All-Day Dining	300	142557.74
+Lobby Lounge	304	136168.04
+Pool Bar	307	144637.21
+Room Service	297	139501.61
+Specialty Restaurant	292	136003.43
