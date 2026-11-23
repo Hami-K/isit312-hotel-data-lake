@@ -32,6 +32,32 @@ flowchart TB
     CUR --> J1 & J2 & J3 & J4
     J1 & J2 & J3 & J4 --> RES
     RES --> REP
+
+    classDef source fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a
+    classDef ingest fill:#ccfbf1,stroke:#0d9488,stroke-width:2px,color:#134e4a
+    classDef raw fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#7f1d1d
+    classDef cleaned fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#78350f
+    classDef curated fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#14532d
+    classDef job fill:#ffedd5,stroke:#ea580c,stroke-width:2px,color:#7c2d12
+    classDef result fill:#e0e7ff,stroke:#4f46e5,stroke-width:2px,color:#312e81
+    classDef report fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#581c87
+    classDef future fill:#f3f4f6,stroke:#6b7280,stroke-width:2px,stroke-dasharray:5 5,color:#374151
+
+    class SRC source
+    class ING ingest
+    class RAW raw
+    class CLEAN cleaned
+    class CUR curated
+    class J1,J2,J3,J4 job
+    class RES result
+    class REP report
+    class RT future
+
+    linkStyle default stroke:#64748b,stroke-width:2px
+
+    style CLUSTER fill:#f8fafc,stroke:#334155,stroke-width:2px,color:#0f172a
+    style HDFS fill:#f0fdf4,stroke:#16a34a,stroke-width:1px,color:#14532d
+    style YARN fill:#fff7ed,stroke:#ea580c,stroke-width:1px,color:#7c2d12
 ```
 
 | Layer | What happens | Folder in this repo |
