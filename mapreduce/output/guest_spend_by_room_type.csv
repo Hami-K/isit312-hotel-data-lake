@@ -1,0 +1,7 @@
+room_type,stays,avg_nights,avg_room_revenue_per_stay,avg_fnb_spend_per_stay,avg_total_spend_per_stay,fnb_share_pct,pct_stays_with_fnb_spend
+All room types,6223,2.62,2704.59,996.15,3700.74,26.9,90.0
+Deluxe King,2210,2.60,2548.08,977.60,3525.68,27.7,90.3
+Deluxe Twin,901,2.60,2300.27,999.44,3299.71,30.3,90.0
+Executive Suite,999,2.65,4850.21,1015.97,5866.18,17.3,89.8
+Family Room,619,2.70,3345.48,1021.42,4366.90,23.4,90.5
+Standard Twin,1494,2.62,1479.67,997.90,2477.57,40.3,89.4

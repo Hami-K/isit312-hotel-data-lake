@@ -1,0 +1,8 @@
+started_at,job,seconds,status
+2026-11-23 02:34:18,wifi_vs_occupancy,31,SUCCEEDED
+2026-11-23 02:35:41,guest_spend_per_stay,26,SUCCEEDED
+2026-11-23 02:36:07,guest_spend_by_room_type,25,SUCCEEDED
+2026-11-23 02:36:35,cost_vs_revenue,24,SUCCEEDED
+2026-11-23 02:37:01,wifi_vs_occupancy,25,SUCCEEDED
+2026-11-23 02:37:29,reviews_vs_operations,26,SUCCEEDED
+2026-11-23 02:45:54,wifi_vs_occupancy,26,SUCCEEDED
