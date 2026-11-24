@@ -87,6 +87,7 @@ flowchart TB
 | `mapreduce/` | MapReduce analysis jobs (Python, Hadoop Streaming) and the script that runs them |
 | `experiment/` | Timing experiment showing why MapReduce is not suitable for real-time processing |
 | `charts/` | Charts made from the MapReduce output |
+| Main folder | `Volume and growth estimate.docx` (data volume and 5-year storage estimate) and `exec summary & motivation.docx` (report sections) |
 
 ## Cluster
 
@@ -106,6 +107,7 @@ Web interfaces: HDFS at http://localhost:9870, YARN at http://localhost:8088.
 - Docker Desktop (on Windows, with WSL 2)
 - Git Bash, or another bash shell, for the `.sh` scripts
 - About 10 GB of RAM available to Docker
+- Python 3 with pandas and matplotlib on the host machine, for the charts and the timing experiment (`pip install pandas matplotlib`)
 
 ## How to run
 
@@ -137,7 +139,21 @@ bash mapreduce/run_jobs.sh
 ```
    Results are written to `/datalake/curated/reports/` in HDFS and to `mapreduce_output/` in the main folder.
 
-6. **Stop the cluster:**
+6. **Make the charts and the dashboard:**
+```
+python charts/make_dashboard.py
+```
+   This reads `mapreduce_output/` and writes four chart images and `dashboard.html` to `reporting_output/`.
+
+7. **Optional: run the timing experiment** (about 10 minutes, uses its own HDFS folder):
+```
+cd experiment
+bash run_experiment.sh
+cd ..
+```
+   See `experiment/README.md` for details.
+
+8. **Stop the cluster:**
 ```
 cd cluster
 docker compose down
