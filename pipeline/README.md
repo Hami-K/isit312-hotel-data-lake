@@ -15,7 +15,7 @@ One command runs the whole nightly batch.
 
 - The cluster from `cluster/` running (`docker compose up -d --build`), with the zone folders created (`bash create_zones.sh`).
 - The NodeManager built from the custom image in `cluster/`, which adds Python 3.5. The Python programs run inside that container.
-- The source files in a `data` folder next to `docker-compose.yml` (one subfolder per source, as produced by the data generator).
+- The source files in a `data` folder next to `docker-compose.yaml` (one subfolder per source, as produced by the data generator).
 - Git Bash on Windows, or any bash shell.
 
 ## How to run
